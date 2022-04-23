@@ -1,7 +1,7 @@
 let carts = document.querySelectorAll('.add-cart');
 
 async function getProducts() {
-    const response = await axios.get(`http://localhost:4000/products`);
+    const response = await axios.get(`https://my-app-z2d68.ondigitalocean.app/products`);
     console.log(response.data);
     products = response.data.products
 
