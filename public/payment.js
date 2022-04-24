@@ -1,5 +1,5 @@
 stage = 'prod';
-const host = stage === 'dev' ? 'http://localhost:4000'  : 'https://my-app-z2d68.ondigitalocean.app'
+const host = stage === 'dev' ? 'http://localhost:4000'  : 'https://capston-traderjoe.xyz'
 
 const stripe = Stripe('pk_test_51Krl5GLB7NGpofCggRvpmlI9dlZVDbnyvGL4WMmwCQgASTJZO4dRwfnMbtISp9VbzrHl7TVLUWn87BzE1oxkHfyt00nPxqy4oG');
 
