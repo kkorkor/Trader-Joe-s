@@ -1,7 +1,10 @@
 let carts = document.querySelectorAll('.add-cart');
+let stage = 'prod';
+let products = [];
 
 async function getProducts() {
-    const response = await axios.get(`https://my-app-z2d68.ondigitalocean.app/products`);
+    const host = stage === 'dev' ? 'http://localhost:4000'  : 'https://capston-traderjoe.xyz '
+    const response = await axios.get(`${host}/products`);
     console.log(response.data);
     products = response.data.products
 
@@ -9,6 +12,8 @@ async function getProducts() {
 
 }
 getProducts();
+
+
 
 function populateProducts() {
     const container = document.querySelector('.container');
@@ -166,7 +171,6 @@ function displayCart() {
                 <h4 class="basketTotalTitle">Basket Total</h4>
                 <h4 class="basketTotal">$${cart},00</h4>
             </div>
-            <a href="payment.html" class="submit">Submit Order</a>
             `
 
         deleteButtons();

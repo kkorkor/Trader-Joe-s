@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://js.stripe.com/v3/"></script>
 
-    <title>Shopping Cart</title>
+    <title>Trader Joe's</title>
 </head>
 <body>
     <header>
@@ -38,9 +40,12 @@
         </div>
         <div class="products">
         </div>
+        <div class="BtnCtn">
+            <button id="Checkout" class="checkout">Check Out</button>
+        </div>
     </div>
     <script src="/main.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+    <script src="/payment.js"></script>
 </body>
 </html>
